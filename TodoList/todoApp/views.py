@@ -3,9 +3,10 @@ from rest_framework import generics
 from .models import ToDo
 from .serializers import ToDoSerializer
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
+# I have defined IsAuthenticatedOrReadOnly project level permission in settings.py in line 134
 # because of IsAuthenticatedOrReadOnly permission, if there is any one who hasn't been authenticated, they wiil be allowed to read only but won't be allowed to put delete and create
 
-# Create your views here.
+# Create my views
 
 # read
 class ListTodo(generics.ListAPIView):
