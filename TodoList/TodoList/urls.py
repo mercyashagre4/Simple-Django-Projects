@@ -20,5 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('todoApp.urls')),
+    # the third path is to enable any user(who is not an admin and a staff user) to login and view the lists
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
