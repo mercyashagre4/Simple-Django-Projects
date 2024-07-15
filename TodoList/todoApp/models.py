@@ -8,5 +8,6 @@ class ToDo(models.Model):
     Date = models.DateField(blank=False)
     Completed = models.BooleanField(default=False)
 
+    # to make it more user-friendly  
     def __str__(self):
         return self.Title
