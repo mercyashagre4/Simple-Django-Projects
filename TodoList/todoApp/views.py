@@ -3,7 +3,7 @@ from rest_framework import generics
 from .models import ToDo
 from .serializers import ToDoSerializer
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-# because of IsAuthenticatedOrReadOnly, if there is any one who hasn't been authebticated, they wiil be allowed to read only but won't be allowed to put delete and create
+# because of IsAuthenticatedOrReadOnly permission, if there is any one who hasn't been authenticated, they wiil be allowed to read only but won't be allowed to put delete and create
 
 # Create your views here.
 
